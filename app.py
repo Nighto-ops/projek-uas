@@ -38,6 +38,12 @@ st.markdown("""
         background-color: #0F172A;
     }
     
+    /* Leaflet Folium Map Clean Dark Background */
+    .leaflet-container {
+        background-color: #0F172A !important;
+        border-radius: 8px;
+    }
+    
     /* Metric Cards Premium Dark Mode */
     .metric-card {
         background-color: #1E293B;
@@ -610,9 +616,18 @@ Anda dapat mengontrol dua *layer* visualisasi melalui menu di pojok kanan atas p
 - **Layer Simbol Proporsional (Jumlah Penduduk Miskin):** Menampilkan lingkaran dengan ukuran proporsional terhadap akumulasi beban absolut penduduk miskin (ribu jiwa).
 """)
 
-# Inisialisasi Peta Folium
+# Inisialisasi Peta Folium (tiles=None untuk menyembunyikan laut & negara tetangga, hanya menampilkan wilayah Indonesia)
 map_center = [-2.548926, 118.0148634]
-m = folium.Map(location=map_center, zoom_start=5, tiles="OpenStreetMap")
+m = folium.Map(location=map_center, zoom_start=5, tiles=None)
+
+# Layer Opsional Peta Dasar (bisa diaktifkan melalui Layer Control jika dibutuhkan)
+folium.TileLayer(
+    tiles="OpenStreetMap",
+    name="Peta Dasar Dunia (OpenStreetMap)",
+    overlay=False,
+    control=True,
+    show=False
+).add_to(m)
 
 # Layer 1: Choropleth (Persentase Penduduk Miskin)
 choropleth = folium.Choropleth(
@@ -622,8 +637,9 @@ choropleth = folium.Choropleth(
     columns=['kodekab', 'Persentase_Penduduk_Miskin'],
     key_on='feature.properties.kodekab',
     fill_color='YlOrRd',
-    fill_opacity=0.75,
-    line_opacity=0.3,
+    fill_opacity=0.85,
+    line_opacity=0.4,
+    line_color='#334155',
     legend_name='Persentase Penduduk Miskin (%)',
     smooth_factor=0.5
 ).add_to(m)
