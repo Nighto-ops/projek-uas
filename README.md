@@ -1,4 +1,4 @@
-# 🇮🇩 Merajut Benang Merah Kesejahteraan: Dasbor Analisis Ketimpangan Indonesia 2025
+# Merajut Benang Merah Kesejahteraan: Dasbor Analisis Ketimpangan Indonesia 2025
 
 [![Streamlit App](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](https://streamlit.io/)
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
@@ -9,7 +9,7 @@ Dasbor analitis interaktif **"Merajut Benang Merah Kesejahteraan"** menyajikan p
 
 ---
 
-## 📌 Identitas Proyek
+## Identitas Proyek
 
 - **Mata Kuliah:** Visualisasi Data dan Informasi
 - **Institusi:** Politeknik Statistika STIS
@@ -19,32 +19,32 @@ Dasbor analitis interaktif **"Merajut Benang Merah Kesejahteraan"** menyajikan p
 
 ---
 
-## 🚀 Fitur Utama & Visualisasi Multi-Dimensi
+## Fitur Utama & Visualisasi Multi-Dimensi
 
-### 1. 📊 Dimensi Multivariat (Karakteristik 38 Provinsi)
+### 1. Dimensi Multivariat (Karakteristik 38 Provinsi)
 - **Reduksi Dimensi (PCA Scatter Plot):** Menyederhanakan 8 indikator utama BPS (IPM, Persentase Kemiskinan, TPT, RLS, Gini Ratio, PDRB per Kapita, Pengeluaran per Kapita, dan Angka Harapan Hidup) menjadi 2 Komponen Utama untuk memetakan kedudukan 38 provinsi.
 - **Klastering K-Means:** Pengelompokan otomatis provinsi ke dalam 3 Klaster Kesejahteraan (*Kesejahteraan Tinggi*, *Kesejahteraan Menengah*, dan *Tantangan Pembangunan*).
 - **Parallel Coordinates Plot:** Menguraikan profil 8 indikator secara simultan dengan interaksi *brushing* dan filter klaster terintegrasi (*Brushing & Linking*).
 
-### 2. 🗺️ Dimensi Geospasial (Kantong Kemiskinan 514 Kab/Kota)
+### 2. Dimensi Geospasial (Kantong Kemiskinan 514 Kab/Kota)
 - **Peta Interaktif Folium Terfokus:** Peta khusus wilayah Indonesia tanpa gangguan peta dasar laut/negara lain (*clean dark slate canvas*).
 - **Layer Choropleth:** Visualisasi rasio persentase penduduk miskin (%) dengan warna *colorblind-friendly* (`YlOrRd`).
 - **Layer Simbol Proporsional:** Lingkaran proporsional untuk memvisualisasikan beban akumulasi jumlah penduduk miskin absolut (ribu jiwa).
 - **Fitur Interaktif:** Sticky tooltip rincian wilayah, *zoom/pan*, serta *Layer Control toggle*.
 
-### 3. 🌳 Dimensi Hierarki (Ironi Konsumsi Rumah Tangga)
+### 3. Dimensi Hierarki (Ironi Konsumsi Rumah Tangga)
 - **Struktur Pengeluaran per Kapita:** Menguraikan rata-rata pengeluaran bulanan (Rp/Bulan) untuk komoditas **Makanan** dan **Bukan Makanan**.
 - **Mode Visualisasi Ganda:** Pengguna dapat beralih antara tampilan **Treemap (Kotak)** dan **Sunburst Chart (Lingkaran)** secara dinamis.
 - **Temuan Utama:** Mengungkap porsi pengeluaran **Rokok & Tembakau** yang sangat tinggi pada kelompok makanan, bahkan melampaui komoditas gizi esensial (daging dan telur).
 
-### 4. 📚 Metadata, Metodologi & Fitur Unduh Data
+### 4. Metadata, Metodologi & Fitur Unduh Data
 - **Transparansi Metodologi:** Dokumentasi pembersihan data, harmonisasi kode wilayah (`kodekab`), standarisasi *StandardScaler*, algoritma clustering, serta penyederhanaan geometri spasial *Douglas-Peucker*.
 - **Kamus Data & Definisi Resmi:** Penjelasan rinci satuan dan definisi operasional indikator BPS.
 - **Unduh Dataset (CSV):** Tombol unduh data CSV langsung untuk setiap dimensi analisis.
 
 ---
 
-## 🛠️ Teknologi & Dependensi
+## Teknologi & Dependensi
 
 Proyek ini dibangun menggunakan *stack* statistik & visualisasi Python modern:
 
@@ -58,7 +58,7 @@ Proyek ini dibangun menggunakan *stack* statistik & visualisasi Python modern:
 
 ---
 
-## 📁 Struktur Direktori Proyek
+## Struktur Direktori Proyek
 
 ```text
 projek-uas/
@@ -77,7 +77,7 @@ projek-uas/
 
 ---
 
-## ⚡ Panduan Instalasi & Melakukan Running
+## Panduan Instalasi & Melakukan Running
 
 ### 1. Prasyarat System
 Pastikan Anda telah menginstal **Python 3.9** atau versi yang lebih baru di perangkat Anda.
@@ -113,14 +113,14 @@ Aplikasi akan otomatis terbuka di browser lokal Anda pada alamat `http://localho
 
 ---
 
-## 📈 Sumber Data Resmi
+## Sumber Data Resmi
 
 1. **Badan Pusat Statistik (BPS) 2025:** Indikator Sosial Ekonomi Provinsi, Persentase & Jumlah Penduduk Miskin Kabupaten/Kota, serta Survei Sosial Ekonomi Nasional (Susenas) Pengeluaran Rumah Tangga.
 2. **Badan Informasi Geospasial (BIG) / BPS:** Peta Geometri Administrasi Kabupaten/Kota Indonesia.
 
 ---
 
-## 📄 Lisensi & Hak Cipta
+## Lisensi & Hak Cipta
 
 Proyek ini dikembangkan untuk kepentingan akademik dan penelitian dalam mata kuliah **Visualisasi Data dan Informasi** di **Politeknik Statistika STIS**. Seluruh data yang digunakan bersumber dari publikasi resmi BPS.
 
