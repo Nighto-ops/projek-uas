@@ -17,6 +17,7 @@ from sklearn.cluster import KMeans
 # ==========================================
 st.set_page_config(
     page_title="Dasbor Ketimpangan & Kesejahteraan Indonesia 2025",
+    page_icon="logo.png",
     layout="wide",
     initial_sidebar_state="expanded"
 )
