@@ -44,6 +44,13 @@ st.markdown("""
         border-radius: 8px;
     }
     
+    /* Responsive Mobile Adjustments */
+    @media (max-width: 768px) {
+        .leaflet-control-layers {
+            font-size: 0.8rem !important;
+        }
+    }
+    
     /* Metric Cards Premium Dark Mode */
     .metric-card {
         background-color: #1E293B;
@@ -209,9 +216,9 @@ col_logo, col_title = st.columns([1, 4])
 
 with col_logo:
     if os.path.exists("logo.png"):
-        st.image("logo.png", use_container_width=True)
+        st.image("logo.png", width=120)
     else:
-        st.image("logo.png")
+        st.image("logo.png", width=120)
 
 with col_title:
     st.markdown("""
