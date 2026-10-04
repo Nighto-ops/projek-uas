@@ -1,0 +1,24 @@
+id,parent,value
+Total Pengeluaran,,
+Makanan,Total Pengeluaran,
+Bukan Makanan,Total Pengeluaran,
+Padi-padian,Makanan,89278.0
+Umbi-umbian,Makanan,9389.0
+Ikan,Makanan,61063.0
+Daging,Makanan,37769.0
+Telur dan susu,Makanan,39939.0
+Sayur-sayuran,Makanan,64556.0
+Kacang-kacangan,Makanan,15383.0
+Buah-buahan,Makanan,44501.0
+Minyak dan kelapa,Makanan,20752.0
+Bahan minuman,Makanan,23101.0
+Bumbu-bumbuan,Makanan,15979.0
+Konsumsi lainnya,Makanan,13599.0
+Makanan dan minuman jadi,Makanan,248501.0
+Rokok,Makanan,91708.0
+Perumahan dan fasilitas rumah tangga,Bukan Makanan,398657.0
+Aneka barang dan jasa,Bukan Makanan,200710.0
+"Pakaian, alas kaki, dan tutup kepala",Bukan Makanan,39163.0
+Barang tahan lama,Bukan Makanan,63063.0
+"Pajak, pungutan, dan asuransi",Bukan Makanan,64711.0
+Keperluan pesta dan upacara,Bukan Makanan,27267.0
